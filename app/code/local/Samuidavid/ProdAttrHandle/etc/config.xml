@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Samuidavid_ProdAttrHandle>
+            <version>0.1.0</version>
+        </Samuidavid_ProdAttrHandle>
+    </modules>
+    <global>
+        <events>
+            <controller_action_layout_load_before>
+                <observers>
+                    <prodattrhandle>
+                        <class>Samuidavid_ProdAttrHandle_Model_Observer</class>
+                        <method>addAttributeSetHandle</method>
+                    </prodattrhandle>
+                </observers>
+            </controller_action_layout_load_before>
+        </events>
+    </global>
+</config>
